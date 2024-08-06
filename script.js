@@ -22,5 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Auto-play functionality (optional)
     setInterval(() => {
         nextButton.click();
-    }, 5000); // Change testimonial every 5 seconds
+    }, 4000); // Change testimonial every 4 seconds
 });
+
+
+
