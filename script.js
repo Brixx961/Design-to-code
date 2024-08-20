@@ -38,7 +38,7 @@ menu.addEventListener('click', function() {
 
 // hero section animation
 
-const words = ["AND", " ", "BEYOND"];
+const words = ["AND  BEYOND"];
 let i = 0;
 let timer;
 
@@ -48,11 +48,12 @@ function typingEffect() {
         if (word.length > 0) {
             document.querySelector('.typing-text').innerHTML += word.shift();
         } else {
-            // After typing the word, pause for 3 seconds with the cursor blinking
-            document.querySelector('.cursor').style.display = 'inline-block'; 
+            // Show the blinking cursor after typing
+            document.querySelector('.typing-text').innerHTML += '<span class="cursor">|</span>';
             setTimeout(() => {
+                document.querySelector('.cursor').style.display = 'none'; // Hide cursor before deleting
                 deletingEffect();
-            }, 3000); // 3-second pause before deleting
+            }, 1000); // Wait 1 second before deleting
             return false;
         }
         timer = setTimeout(loopTyping, 200);
@@ -60,17 +61,20 @@ function typingEffect() {
     loopTyping();
 }
 
-
-
 function deletingEffect() {
     let word = words[i].split("");
     let loopDeleting = function() {
         if (word.length > 0) {
             word.pop();
-            document.querySelector('.typing-text').innerHTML = word.join("");
+            document.querySelector('.typing-text').innerHTML = word.join("") + '<span class="cursor">|</span>';
         } else {
-            i = (i + 1) % words.length; // Cycle through words
-            setTimeout(typingEffect, 500); // Start typing the next word after 0.5 seconds
+            document.querySelector('.cursor').style.display = 'none'; // Hide cursor before starting next word
+            if (words.length > (i + 1)) {
+                i++;
+            } else {
+                i = 0;
+            }
+            typingEffect();
             return false;
         }
         timer = setTimeout(loopDeleting, 100);
@@ -79,12 +83,6 @@ function deletingEffect() {
 }
 
 typingEffect();
-
-// Add blinking cursor effect
-const cursor = document.createElement('span');
-cursor.classList.add('cursor');
-cursor.innerHTML = "|"; // Cursor character
-document.querySelector('.typing-text').appendChild(cursor);
 
 // CSS for the blinking cursor
 const style = document.createElement('style');

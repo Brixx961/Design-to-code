@@ -5,6 +5,10 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+section{
+  background-color: #1b1a1f;
+}
+
 .container{
   margin: 0 auto;
   width: 100%;
@@ -291,4 +295,21 @@ h5,h3{
 .main__content{
   position: relative;
   z-index: 2;
+}
+
+.intro-style{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 100px 200px;
+
+}
+
+.intro-text h3{
+  text-align: left;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 700;
 }
