@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
         index = (index > 0) ? index - 1 : items.length - 1;
         updateCarousel();
     });
-
+ 
     nextButton.addEventListener('click', () => {
         index = (index < items.length - 1) ? index + 1 : 0;
         updateCarousel();
     });
 
-    // Auto-play functionality (optional)
+    // Auto-play functionality
     setInterval(() => {
         nextButton.click();
     }, 4000); // Change testimonial every 4 seconds

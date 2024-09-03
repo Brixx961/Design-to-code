@@ -10,7 +10,7 @@ section{
 }
 
 .container{
-  margin: 0 150px;
+  margin: 0 100px;
   width: 100%;
 }
 
@@ -314,13 +314,19 @@ h5,h3{
   font-weight: 700;
 }
 
+.gallery-title{
+  margin: 0px 100px;
+  padding: 100px 0px 15px 0px ;
+  color: #fff;
+}
+
 .image-category{
   display: flex;
   align-self: center;
   justify-content: flex-start;
   align-items: center;
   gap: 2px;
-  margin: 0 150px;
+  margin: 0 100px;
   padding-bottom: 0px;
 }
 
@@ -329,6 +335,7 @@ h5,h3{
   height: 200px;
   object-fit: cover;
 }
+
 
 .image-category h3{
   text-align: center;
@@ -348,7 +355,7 @@ h5,h3{
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* grid-template-rows: 1fr 1fr; */
-  padding: 0px 150px;
+  padding: 0px 100px;
   margin-top: 0px;
   padding-top: 0px;
   column-gap: 100px;
@@ -367,6 +374,112 @@ h5,h3{
   height: 450px;
   object-fit: cover;
 }
+
+.showcase-gallery-image.five{
+  height: 300px;
+  object-fit: cover;
+}
+
+.about-us-text{
+  color: white;
+  padding: 100px 0px 30px 100px
+}
+
+.about-us-description{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  /* justify-content: flex-start; */
+  align-items: center;
+  margin: 0px 100px;
+  /* height: 350px;
+  width: 100%; */
+  column-gap: 100px;
+  
+}
+
+.about-us-description img{
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.about-us-description p{
+  width: 100%;
+  font-size: 17px;
+  color: white;
+}
+
+.about-us-small-tag{
+  font-weight: lighter;
+}
+
+.mini-navbar{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 100px 0px;
+}
+
+.mini-navbar-content-container{
+  border: 2px solid white;
+  padding: 0px 50px;
+}
+
+.mini-navbar-content{
+  align-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  /* padding: 0px 50px; */
+  /* border: 3px solid white; */
+}
+
+.mini-navbar-content:hover{
+  color: red;
+}
+
+.mini-navbar-content-text{
+  text-align: center;
+  color: white;
+}
+
+.picture-divider-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+  color: white;
+  
+}
+.picture-divider{
+justify-content: center;
+background-image: url(images/wedding2.jpg);
+background-size: cover;
+width: 100%;
+height: 350px;
+opacity: 0.5;
+padding: 0px 0px 100px 0px;
+/* background: rgba(57, 57, 57, 0.5);
+opacity: 1; */
+}
+
+.picture-divider-text{
+  padding: 30px 0px 240px 15px;
+  opacity: 1;
+  /* background: rgba(63, 63, 63, 0.5);
+  inset: 0;
+  opacity: 1; */
+}
+
+.picture-divider-text h3{
+  font-weight: 500;
+  opacity: 1;
+}
+
+
+
 
 
 
