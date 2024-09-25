@@ -99,3 +99,52 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+let testSlide = document.querySelectorAll('.testItem');
+let dots = document.querySelectorAll('.dot');
+let counter = 0;
+let slideInterval;
+
+function switchTest(currentTest) {
+    testSlide[counter].classList.remove('active');
+    dots[counter].classList.remove('active');
+
+    counter = parseInt(currentTest.getAttribute('attr'));
+
+    testSlide[counter].classList.add('active');
+    dots[counter].classList.add('active');
+}
+
+function slideNext() {
+    testSlide[counter].classList.remove('active');
+    dots[counter].classList.remove('active');
+
+    counter = (counter + 1) % testSlide.length;
+
+    testSlide[counter].classList.add('active');
+    dots[counter].classList.add('active');
+}
+
+function slidePrev() {
+    testSlide[counter].classList.remove('active');
+    dots[counter].classList.remove('active');
+
+    counter = (counter - 1 + testSlide.length) % testSlide.length;
+
+    testSlide[counter].classList.add('active');
+    dots[counter].classList.add('active');
+}
+
+function autoSliding() {
+    slideInterval = setInterval(slideNext, 2000);
+}
+
+autoSliding(); // Start auto-sliding
+
+// Pause auto-slide on hover and resume on mouseout
+const testimonialContainer = document.querySelector('.testimonial');
+testimonialContainer.addEventListener('mouseover', function() {
+    clearInterval(slideInterval);
+});
+
+testimonialContainer.addEventListener('mouseout', autoSliding);

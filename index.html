@@ -263,61 +263,126 @@
   </section>
  <!-- picture divider ends  -->
 
+
 <!-- testimonial begins  -->
 <section>
-  <div>
-    <div>
-      <P>OUR CLIENTS</P>
-      <h3>Some friends we've worked with</h3>
-    </div>
-    carousel testimonial 
-    <div>
-      <div class="carousel-container">
-        <div class="carousel">
-            <div class="carousel-item active">
-                <img src="images/creative1.jpg" alt="">
-                <p>"This service is amazing! Highly recommended."</p>
-                <h3>- John Doe</h3>
-            </div>
-            <div class="carousel-item">
-                <img src="images/creative1.jpg" alt="">
-                <p>"Excellent customer support and great results."</p>
-                <h3>- Jane Smith</h3>
-            </div>
-            <div class="carousel-item">
-                <img src="images/creative1.jpg" alt="">
-                <p>"I love the quality of the product. Will buy again."</p>
-                <h3>- Alice Johnson</h3>
-            </div>
-        </div>
-        <button class="prev">❮</button>
-        <button class="next">❯</button>
+  <div class="testimonial">
+    <div class="t1">
+      <h3 class="testimonial-subhead">Our Clients</h3>
+      <h2>Some friends we have made while working together.</h2>
     </div>
 
+  <div class="t2">
+
+    <div class="testimonial-item testItem active ">
+     <img src="images/creative1.jpg" alt="" class="testimonial-img">
+     <h3 class="testimony">“I cannot express how much we love our wedding pictures from OMAVISUALS! Every photo is stunning and perfectly captures our special day. The photographer was incredibly professional and made everything easy. Thank you, OMAVISUALS, for the beautiful memories!.”</h3>
+     <h3 class="Clients-name">Tabitha Adeyomo</h3>
     </div>
+
+    <div class="testimonial-item testItem">
+     <img src="images/creative3.jpg" alt="" class="testimonial-img">
+     <h3 class="testimony">“Working with OMAVISUALS was an absolute pleasure! They made our vision come to life and captured every beautiful moment of our event.”</h3>
+     <h3 class="Clients-name">James Okoro</h3>
+    </div>
+
+    <div class="testimonial-item testItem">
+     <img src="images/creative2.jpg" alt="" class="testimonial-img">
+     <h3 class="testimony">“The quality of the photos and professionalism was beyond our expectations. Highly recommended!”</h3>
+     <h3 class="Clients-name">Chinelo Eze</h3>
+    </div>
+
   </div>
-     
+
+   <!-- Left and right arrows -->
+   <div class="testimonial-arrows">
+     <span class="testimonial-arrow left-arrow" onclick="slidePrev()">&#10094;</span>
+     <span class="testimonial-arrow right-arrow" onclick="slideNext()">&#10095;</span>
+   </div>
+
+   <section class="indicators">
+    <div class="dot active" attr='0' onclick="switchTest(this)"></div>
+    <div class="dot" attr='1' onclick="switchTest(this)"></div>
+    <div class="dot" attr='2' onclick="switchTest(this)"></div>
+  </section>
+  </div>
 </section>
+
 <!-- testimonial ends -->
 
 <!-- Instagram gallery begins -->
-<section>
-  <!-- <div>
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-  </div> -->
-
-  
-    
+<section class="masonry">
+  <div class="masonry-gallery">
+    <div class="masonry-gallery-item masonry-gallery-item-md 1">
+      <img src="images/masonry1.jpg" alt="">
+    </div>
+    <div class="masonry-gallery-item masonry-gallery-item-lg 1">
+      <img src="images/masonry2.jpg" alt="">
+    </div>
+    <div class="masonry-gallery-item masonry-gallery-item-md">
+      <img src="images/masonry3.jpg" alt="">
+    </div>
+    <div class="masonry-gallery-item masonry-gallery-item-md">
+      <img src="images/masonry4.jpeg" alt="">
+    </div>
+    <div class="masonry-gallery-item masonry-gallery-item-md">
+      <img src="images/masonry5.jpg" alt="">
+    </div>
+    <div class="masonry-gallery-item masonry-gallery-item-lg">
+      <img src="images/masonry6.jpg" alt="">
+    </div>
+    <div class="masonry-gallery-item masonry-gallery-item-md">
+      <img src="images/masonry7.jpg" alt="">
+    </div>
+  </div>
 </section>
-<!-- instagram gallery ends -->
+<!-- Instagram gallery ends -->
+
+<!-- contact form section begins -->
+<section>
+<div class="contact-section">
+  <div class="conntact-section1 contact-item ">
+    <div>
+    <h5>Say hello</h5>
+    <h3>Request a free quote</h3>
+    <form action="index.html" autocomplete="off">
+      <h3 class="title">Contact us</h3>
+      <div class="input-container">
+        <input type="text" name="name" class="input" />
+        <label for="">Name</label>
+        <span>Name</span>
+      </div>
+      <div class="input-container">
+        <input type="email" name="email" class="input" />
+        <label for="">Email</label>
+        <span>Email</span>
+      </div>
+      <div class="input-container">
+        <input type="tel" name="phone" class="input" />
+        <label for="">Phone</label>
+        <span>Phone</span>
+      </div>
+      <div class="input-container textarea">
+        <textarea name="message" class="input"></textarea>
+        <label for="">Message</label>
+        <span>Message</span>
+      </div>
+      <input type="submit" value="Send" class="btn" />
+    </form>
+
+  </div>
+  <div class="contact-section2 contact-item">
+    <h5>Get in touch</h5>
+    <h3>Email us</h3>
+    <p>For project inquiries only:
+      ask@omavisuals.com</p>
+    <p>For other questions:
+      Info@omavisuals.com</p>
+
+  </div>
+</div>
+</section>
+
 
 
 
