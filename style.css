@@ -635,3 +635,16 @@ opacity: 1; */
 .form-grid1{
   
 }
+.footer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0px 100px;
+  gap: 10px;
+}
+
+.footer-item{
+  align-items: center;
+  width: 100%;
+
+}
