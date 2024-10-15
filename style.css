@@ -95,7 +95,8 @@ h5,h3{
 }
 
 .navbar__item {
-  height: 80px;
+  /* height: 80px; */
+  width: 100%
 }
 
 .navbar__links {
@@ -484,6 +485,7 @@ opacity: 1; */
   align-items: center;
   padding: 100px 100px;
   gap: 10px;
+  color: white;
 }
 
 .t1 {
@@ -582,7 +584,8 @@ opacity: 1; */
   font-size: 1.2em;
   color: #fff;
   height: 80%;
-  margin-bottom: 0;
+  margin-bottom: 0px;
+  padding-bottom: 0px
 }
 
 .masonry-gallery-item-lg {
@@ -597,7 +600,8 @@ opacity: 1; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   vertical-align: top;
-  margin-bottom: 0;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 /* Remove extra space for last item */
@@ -605,13 +609,21 @@ opacity: 1; */
   margin-bottom: 0;
 }
 
+form, input, select, label {
+  margin: 0;
+  padding: 0;
+}
+
 .contact-container{
   display: flex;
   position: relative;
   justify-content: center;
   align-content: center;
+  align-items: stretch; 
   margin: 0px 100px;
   color: #fff;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .contact-child1{
@@ -625,22 +637,41 @@ opacity: 1; */
   width: 100%;
 }
 
+.contact-child1, .contact-child2 {
+  margin-bottom: 0px;
+  padding: 0;
+}
+
 .form-grid{
   display: grid;
   grid-template-rows: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
   width: 100%;
+  gap: 0px;
 }
 
 .form-grid1{
-  
+  margin: 0;
+  padding: 0;
 }
+
+section {
+  margin: 0;
+  padding: 0; /* Remove section padding if any */
+}
+
+form {
+  margin-bottom: 0;
+}
+
+
 .footer{
   display: flex;
   justify-content: center;
   align-content: center;
   margin: 0px 100px;
   gap: 10px;
+  color: white;
 }
 
 .footer-item{
