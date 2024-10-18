@@ -84,6 +84,7 @@ h5,h3{
   left: 50%;
   transform: translateX(-50%);
   
+  
 }
 
 .navbar__menu .style1{
@@ -95,8 +96,9 @@ h5,h3{
 }
 
 .navbar__item {
-  /* height: 80px; */
-  width: 100%
+  height: 80px;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .navbar__links {
