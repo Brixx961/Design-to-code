@@ -32,7 +32,8 @@ h5,h3{
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background: transparent;
   Z-index: 10;
   /* z-index: 999; */
 }
@@ -49,6 +50,7 @@ h5,h3{
   margin-left: auto;
   padding-right: 50px;
   padding-left: 50px;
+  
 }
 
 #navbar__logo {
@@ -102,13 +104,15 @@ h5,h3{
 }
 
 .navbar__links {
-  color: #fff;
+  color: #ffffffbf;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
+  font-family:  -apple-system, -apple-system,  
+  BlinkMacSystemFont;
 }
 
 .navbar__btn {
@@ -130,7 +134,7 @@ h5,h3{
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #f77062;
+  background: #d90a2c;
   color: #fff;
 }
 
@@ -140,7 +144,7 @@ h5,h3{
 }
 
 .navbar__links:hover {
-  color: #f77062;
+  color: #d90a2c;
   transition: all 0.3s ease;
 }
 
