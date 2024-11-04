@@ -36,6 +36,7 @@ h5,h3{
   background: transparent;
   Z-index: 10;
   /* z-index: 999; */
+  border-bottom: 2px solid #9690a259;
 }
 
 .navbar__container {
@@ -111,8 +112,7 @@ h5,h3{
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
-  font-family:  -apple-system, -apple-system,  
-  BlinkMacSystemFont;
+  font-family: "Roboto", sans-serif;  
 }
 
 .navbar__btn {
@@ -199,7 +199,9 @@ h5,h3{
     padding-bottom: 30px;
     position: static;
     transform: none;
-    
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
 
   .navbar__toggle .bar {
