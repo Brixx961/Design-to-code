@@ -36,7 +36,7 @@ h5,h3{
   background: transparent;
   Z-index: 10;
   /* z-index: 999; */
-  border-bottom: 2px solid #9690a259;
+  border-bottom: 1px solid #9690a259;
 }
 
 .navbar__container {
@@ -56,13 +56,14 @@ h5,h3{
 
 #navbar__logo {
   padding-top: 12px;
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  color: white;
+  /* background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; */
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -304,6 +305,20 @@ h5,h3{
 .main__content{
   position: relative;
   z-index: 2;
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .main__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    padding-top: 100%;
+    margin: 0px auto;
+    padding-left: 0px;
+  }
+  .main__container h1{
+    font-size: 2rem;
+  }
 }
 
 .intro-style{
