@@ -338,6 +338,16 @@ h5,h3{
   font-weight: 700;
 }
 
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .intro-text h3 {
+    font-size: 15px;
+    
+  }
+  .main__container h1{
+    font-size: 2rem;
+  }
+}
+
 .gallery-title{
   margin: 0px 100px;
   padding: 100px 0px 15px 0px ;
