@@ -656,14 +656,14 @@ form, input, select, label {
 }
 
 .contact-container{
-  display: flex;
+  display: ;
   position: relative;
   justify-content: center;
   align-content: center;
   align-items: stretch; 
   margin: 0px 100px;
   color: #ffffffbf;
-  padding-bottom: 0px;
+  padding-bottom: 150px;
   margin-bottom: 0px;
 }
 
@@ -688,18 +688,32 @@ form, input, select, label {
 }
 
 .form-grid{
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  /* display: grid;
   grid-template-rows: 1fr 2fr;
   grid-template-columns: 2fr 2fr;
   width: 100%;
-  gap: 0px;
+  gap: 0px; */
   
 }
 
 .form-grid1{
-  margin: 0;
-  padding: 0;
+  align-self: flex-start;
+  width: 100%;
   
+  /* margin: 0;
+  padding: 0;
+   */
+}
+
+.form-grid2{
+  
+  align-self: flex-start;
+  width: 100%;
+
 }
 
 input{
