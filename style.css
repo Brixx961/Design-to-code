@@ -656,7 +656,9 @@ form, input, select, label {
 }
 
 .contact-container{
-  display: ;
+  display: grid ;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr  1fr;
   position: relative;
   justify-content: center;
   align-content: center;
@@ -672,14 +674,14 @@ form, input, select, label {
 }
 
 .contact-child1{
-  flex: 3;
-  align-self: flex-start;
+  /* flex: 3;
+  align-self: flex-start; */
   width: 100%;
 }
 
 .contact-child2{
-  flex: 1;
-  width: 100%;
+  /* flex: 1;
+  width: 100%; */
 }
 
 .contact-child1, .contact-child2 {
@@ -691,7 +693,8 @@ form, input, select, label {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0px;
+  column-gap: 0px;
+  width: 100%;
   /* display: grid;
   grid-template-rows: 1fr 2fr;
   grid-template-columns: 2fr 2fr;
