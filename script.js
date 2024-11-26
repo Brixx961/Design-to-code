@@ -1,7 +1,3 @@
-import { gsap } from "gsap";
-
-
-// cursor animation starts
 const $bigBall = document.querySelector('.cursor__ball--big');
 const $smallBall = document.querySelector('.cursor__ball--small');
 const $hoverables = document.querySelectorAll('.hoverable');
@@ -15,13 +11,11 @@ for (let i = 0; i < $hoverables.length; i++) {
 
 // Move the cursor
 function onMouseMove(e) {
-  gsap.to($bigBall, {
-    duration: 0.4, 
+  TweenMax.to($bigBall, .4, {
     x: e.pageX - 15,
     y: e.pageY - 15
   })
-  gsap.to($smallBall, { 
-    duration: 0.1, 
+  TweenMax.to($smallBall, .1, {
     x: e.pageX - 5,
     y: e.pageY - 7
   })
@@ -29,20 +23,15 @@ function onMouseMove(e) {
 
 // Hover an element
 function onMouseHover() {
-  gsap.to($bigBall, {
-    duration: 0.3,
+  TweenMax.to($bigBall, .3, {
     scale: 4
   })
 }
 function onMouseHoverOut() {
-  gsap.to($bigBall, {
-    duration: 0.3, 
+  TweenMax.to($bigBall, .3, {
     scale: 1
   })
 }
-// cursor animation ends
-
-
 
 
 
