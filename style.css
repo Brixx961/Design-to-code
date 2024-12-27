@@ -474,30 +474,58 @@ h5,h3{
 }
 
 @media (max-width: 768px) {
+  
+  .picture-divider-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center; 
+    color: white;
+    width: 100%; 
+  }
+
+  .picture-divider{
+  justify-content: center;
+  background-image: url(images/wedding2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  opacity: 0.5;
+  padding: 0px 0px 100px 0px;
+  /* background: rgba(57, 57, 57, 0.5);
+  opacity: 1; */
+  }
+
   .showcase-gallery{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    align-items: center;
     width: 100%;
-    margin: 0px;
     padding: 0px 10px;
   }
 
   .showcase-gallery-image{
-    max-width: 100%;
-    height: 400px;
-    object-fit: cover;
-    padding: 5px 0px;
-  }
-
-  .showcase-gallery-image.one.two{
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    opacity: 0.5;
     padding: 5px 0px;
   }
 
 .mob{
-  max-width: 100%;
-    height: 400px;
-    object-fit: cover;
+  height: 200px; 
+  width: 100%;
+  /* max-width: 100%; */
+  object-fit: cover;
+}
+
+.one{
+  padding: 5px 0px;
+}
+.two{
+  padding: 5px 0px;
+}
+
 }
 
 .about-us-text{
@@ -514,15 +542,13 @@ h5,h3{
   margin: 0px 100px;
   /* height: 350px;
   width: 100%; */
-  column-gap: 100px;
-  
+  column-gap: 100px; 
 }
 
 .about-us-description img{
   height: 500px;
   width: 100%;
   object-fit: cover;
-
 }
 
 .about-us-description p{
