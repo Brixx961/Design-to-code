@@ -460,11 +460,6 @@ h5,h3{
   height: 2px;
 }
 
-@media (max-width: 768px){
-
-
-}
-
 .showcase-gallery{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -514,6 +509,8 @@ h5,h3{
     object-fit: cover;
   }
 
+}
+
 @media (max-width: 768px) {
   
   .picture-divider-container{
@@ -542,6 +539,7 @@ h5,h3{
 }
 
 .about-us-title{
+  text-transform: uppercase;
   color: white;
   padding: 100px 0px 30px 100px
 }
@@ -574,8 +572,20 @@ h5,h3{
   font-weight: lighter;
 }
 
-@media(max-width:768px) {
-  .about-us-text
+@media (max-width:768px) {
+  .about-us-title{
+    justify-content: left;
+    padding: 80px 5px 20px 5px;
+  }
+  
+  .about-us-description{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0px;
+    padding: 0px 10px;
+  }
+
 }
 
 .mini-navbar{
@@ -623,37 +633,52 @@ h5,h3{
 }
 
 .picture-divider-container{
+  position:relative;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: flex-start;
   align-items: center; 
   color: white;
   width: 100%;
-  
 }
+
 .picture-divider{
+position: relative;  
+display: flex;  
 justify-content: center;
 background-image: url(images/wedding2.jpg);
 background-size: cover;
 width: 100%;
 height: 350px;
-opacity: 0.5;
+/* opacity: 0.5; */
 padding: 0px 0px 100px 0px;
 /* background: rgba(57, 57, 57, 0.5);
 opacity: 1; */
 }
 
+.picture-divider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1; /* Place the overlay below the text */
+}
+
 .picture-divider-text{
+  position: relative;
+  z-index: 2;
+  color: #fff;
   padding: 30px 0px 240px 15px;
   opacity: 1;
-  /* background: rgba(63, 63, 63, 0.5);
-  inset: 0;
-  opacity: 1; */
 }
 
 .picture-divider-text h3{
-  font-weight: 500;
-  opacity: 1;
+  font-size: 24px;
+  font-weight: bold;
+  
 }
 
 .testimonial {
